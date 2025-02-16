@@ -28,7 +28,15 @@ export default function Home() {
         <meta property="og:image" content="https://kubemgr.com/og-card.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
         <meta property="og:image:alt" content="Preview image for Kubemgr.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Merge easily your kubernetes configurations - Kubemgr" />
+        <meta name="twitter:description" content="Kubemgr simplifies merging Kubernetes configuration files, enabling seamless cluster access and management." />
+        <meta name="twitter:image" content="https://kubemgr.com/og-card.png" />
+        <meta name="twitter:image:alt" content="Preview image for Kubemgr.com" />
+        <meta name="twitter:image:width" content="1200" />
+        <meta name="twitter:image:height" content="630" />
       </Head>
       <Script defer src="https://cloud.umami.is/script.js" data-website-id="6d6f1afd-17fc-432d-96be-a82ab23c0f70" data-domains="kubemgr.com" />
       <Toaster />
