@@ -48,7 +48,6 @@ export const ConfigProvider: React.FC<ConfigProviderProps> = ({ children }) => {
       const result = await kubemgr.merge_configs([leftConfig, rightConfig])
       setMergedConfig(result)
     } catch (error) {
-      console.error('Error merging configs:', error)
       setMergedConfig('Error merging configs: ' + error)
     }
   }

@@ -15,7 +15,6 @@ export default function Navbar() {
 
   const handleKeyPressCrate = (e: KeyboardEvent) => {
     e.preventDefault()
-    console.log('Crate')
     if (linkRef.current) {
       window.open(linkRef.current.href, '_blank')
     }
@@ -29,7 +28,7 @@ export default function Navbar() {
         <TooltipShortcutTrigger>
           <Button ref={buttonRef} variant={'secondary'} className="text-base md:text-sm">
             <BoxesIcon size={24} />
-            <a href="https://crates.io/crates/kubemgr" target="_blank">
+            <a ref={linkRef} href="https://crates.io/crates/kubemgr" target="_blank">
               Crates.io
             </a>
           </Button>

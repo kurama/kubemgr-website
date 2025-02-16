@@ -7,7 +7,7 @@ export default function Main() {
   const leftTextareaRef = useRef(null)
   const rightTextareaRef = useRef(null)
   const resultTextareaRef = useRef(null)
-  const { leftConfig, setLeftConfig, rightConfig, setRightConfig, mergedConfig } = useConfig()
+  const { leftConfig, setLeftConfig, rightConfig, setRightConfig, mergedConfig, setMergedConfig } = useConfig()
 
   useEffect(() => {
     gsap.from(leftTextareaRef.current, { x: -50, opacity: 0, duration: 1 })
@@ -36,11 +36,16 @@ export default function Main() {
     localStorage.setItem('rightConfig', value)
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleResultChange = (e: { target: { value: any } }) => {
+    setMergedConfig(e.target.value)
+  }
+
   return (
     <main className="flex flex-col md:flex-row gap-4 h-full p-4 border border-input">
       <Textarea ref={leftTextareaRef} className="h-full custom-scrollbar" placeholder="Put here your first config" value={leftConfig} onChange={handleLeftConfigChange} />
       <Textarea ref={rightTextareaRef} className="h-full custom-scrollbar" placeholder="And here your second config" value={rightConfig} onChange={handleRightConfigChange} />
-      <Textarea ref={resultTextareaRef} className="h-full custom-scrollbar" placeholder="Merged config will appear here" value={mergedConfig} onChange={() => {}} readOnly />
+      <Textarea ref={resultTextareaRef} className="h-full custom-scrollbar" placeholder="Merged config will appear here" value={mergedConfig} onChange={handleResultChange} />
     </main>
   )
 }
