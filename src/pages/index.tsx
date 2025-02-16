@@ -6,6 +6,7 @@ import Navbar from '@/components/navbar'
 import { Toaster } from '@/components/shadcn/toaster'
 import { ConfigProvider } from '@/context/config-context'
 import Head from 'next/head'
+import Script from 'next/script'
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Preview image for Kubemgr.com" />
       </Head>
+      <Script defer src="https://cloud.umami.is/script.js" data-website-id="6d6f1afd-17fc-432d-96be-a82ab23c0f70" data-domains="kubemgr.com" />
       <Toaster />
       <ConfigProvider>
         <div className="flex flex-row justify-between p-4 rounded-t-md border-x border-t border-input">
