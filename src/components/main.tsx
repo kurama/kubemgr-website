@@ -43,9 +43,9 @@ export default function Main() {
 
   return (
     <main className="flex flex-col md:flex-row gap-4 h-full p-4 border border-input">
-      <Textarea ref={leftTextareaRef} className="h-full custom-scrollbar" placeholder="Put here your first config" value={leftConfig} onChange={handleLeftConfigChange} />
-      <Textarea ref={rightTextareaRef} className="h-full custom-scrollbar" placeholder="And here your second config" value={rightConfig} onChange={handleRightConfigChange} />
-      <Textarea ref={resultTextareaRef} className="h-full custom-scrollbar" placeholder="Merged config will appear here" value={mergedConfig} onChange={handleResultChange} />
+      <Textarea ref={leftTextareaRef} spellCheck={false} className="h-full custom-scrollbar" placeholder="Put here your first config" value={leftConfig} onChange={handleLeftConfigChange} />
+      <Textarea ref={rightTextareaRef} spellCheck={false} className="h-full custom-scrollbar" placeholder="And here your second config" value={rightConfig} onChange={handleRightConfigChange} />
+      <Textarea ref={resultTextareaRef} spellCheck={false} className="h-full custom-scrollbar" placeholder="Merged config will appear here" value={mergedConfig} onChange={handleResultChange} />
     </main>
   )
 }
