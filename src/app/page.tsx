@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     'kubernetes access',
   ],
   icons: {
-    icon: 'favicon.png',
+    icon: 'favicon.ico',
   },
   metadataBase: new URL('https://kubemgr.com'),
   alternates: {
