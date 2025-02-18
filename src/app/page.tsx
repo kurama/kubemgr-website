@@ -8,7 +8,7 @@ import { ConfigProvider } from '@/context/config-context'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Kubemgr',
+  title: 'Kubemgr - The Kubernetes Configuration Merger',
   description: 'Kubemgr simplifies merging Kubernetes configuration files, enabling seamless cluster access and management.',
   keywords: [
     'kubernetes',

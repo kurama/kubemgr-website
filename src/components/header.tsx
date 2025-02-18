@@ -8,7 +8,7 @@ export default function Header() {
           Kubemgr
         </TypingAnimation>
       </h1>
-      <h2 >
+      <h2>
         <TypingAnimation duration={45} className="text-[10px] md:text-[12px] text-gray-500">
           The Kubernetes Configuration Merger
         </TypingAnimation>
