@@ -16,6 +16,7 @@ export default function Home() {
         <meta name="description" content="Kubemgr simplifies merging Kubernetes configuration files, enabling seamless cluster access and management." />
         <link rel="icon" href="favicon.png" />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+        <link rel="canonical" href="https://kubemgr.com" key="canonical" />
         <meta
           name="keywords"
           content="kubernetes, kubeconfig, merge, configuration, cluster management, developer tools, kubemgr, k8s, devops, cloud native, container orchestration, configuration management, kubernetes tools, kubernetes configuration, kubernetes merge, kubeconfig merge, kubernetes management, kubernetes deployment, kubernetes clusters, kubernetes access"
