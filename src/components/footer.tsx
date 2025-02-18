@@ -86,22 +86,25 @@ export default function Footer() {
         <Input value={filename} onChange={(e) => setFilename(e.target.value)} placeholder="Name your merged config" className="w-fit" />{' '}
         <TooltipShortcut tooltip={'Merge'} shortcuts={['Ctrl', 'S']}>
           <TooltipShortcutTrigger>
-            <Button variant="secondary" size="icon" className="text-base md:text-sm" onClick={handleMerge} disabled={isMergeDisabled}>
+            <Button variant="secondary" size={'default-icon'} className="text-base md:text-sm" onClick={handleMerge} disabled={isMergeDisabled}>
               <FoldHorizontalIcon />
+              <span className="hidden lg:flex">Merge</span>
             </Button>
           </TooltipShortcutTrigger>
         </TooltipShortcut>
         <TooltipShortcut tooltip={'Download'} shortcuts={['Ctrl', 'D']}>
           <TooltipShortcutTrigger>
-            <Button variant="secondary" size="icon" className="text-base md:text-sm" onClick={handleDownload} disabled={isDownloadCopyDisabled}>
+            <Button variant="secondary" size={'default-icon'} className="text-base md:text-sm" onClick={handleDownload} disabled={isDownloadCopyDisabled}>
               <DownloadIcon />
+              <span className="hidden lg:flex">Download</span>
             </Button>
           </TooltipShortcutTrigger>
         </TooltipShortcut>
         <TooltipShortcut tooltip={'Copy'} shortcuts={['Ctrl', 'Shft', 'C']}>
           <TooltipShortcutTrigger>
-            <Button variant="secondary" size="icon" className="text-base md:text-sm" onClick={handleCopy} disabled={isDownloadCopyDisabled}>
+            <Button variant="secondary" size={'default-icon'} className="text-base md:text-sm" onClick={handleCopy} disabled={isDownloadCopyDisabled}>
               <CopyIcon />
+              <span className="hidden lg:flex">Copy</span>
             </Button>
           </TooltipShortcutTrigger>
         </TooltipShortcut>
@@ -110,8 +113,9 @@ export default function Footer() {
         <TooltipShortcut tooltip={'Help'} shortcuts={['Ctrl', 'H']}>
           <TooltipShortcutTrigger>
             <DialogTrigger asChild>
-              <Button ref={buttonRef} variant="secondary" size="icon">
+              <Button ref={buttonRef} size={'default-icon'} variant="secondary">
                 <CircleHelpIcon />
+                <span className="hidden lg:flex">Help</span>
               </Button>
             </DialogTrigger>
           </TooltipShortcutTrigger>
