@@ -1,3 +1,5 @@
+"use client"
+
 import { useEffect, useRef, useState } from 'react'
 import { CircleHelpIcon, CopyIcon, DownloadIcon, ExternalLink, FoldHorizontalIcon } from 'lucide-react'
 import { Button } from './shadcn/button'

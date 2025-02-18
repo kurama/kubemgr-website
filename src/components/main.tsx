@@ -1,3 +1,5 @@
+'use client'
+
 import { Textarea } from './shadcn/textarea'
 import { useConfig } from '@/context/config-context'
 import { useEffect, useRef } from 'react'
