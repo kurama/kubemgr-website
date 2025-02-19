@@ -9,7 +9,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Kubemgr - The Kubernetes Configuration Merger',
-  description: 'Kubemgr simplifies merging Kubernetes configuration files, enabling seamless cluster access and management.',
+  description: 'Kubemgr Web simplifies merging Kubernetes configuration files with a user-friendly interface. No CLI required. Just paste, merge, and manage your clusters effortlessly.',
   keywords: [
     'kubernetes',
     'kubeconfig',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Merge easily your kubernetes configurations - Kubemgr',
-    description: 'Kubemgr simplifies merging Kubernetes configuration files, enabling seamless cluster access and management.',
+    description: 'Kubemgr Web simplifies merging Kubernetes configuration files with a user-friendly interface. No CLI required. Just paste, merge, and manage your clusters effortlessly.',
     type: 'website',
     url: 'https://kubemgr.com',
     siteName: 'Kubemgr',
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Merge easily your kubernetes configurations - Kubemgr',
-    description: 'Kubemgr simplifies merging Kubernetes configuration files, enabling seamless cluster access and management.',
+    description: 'Kubemgr Web simplifies merging Kubernetes configuration files with a user-friendly interface. No CLI required. Just paste, merge, and manage your clusters effortlessly.',
     images: [
       {
         url: 'https://kubemgr.com/og-card.png',
@@ -73,8 +73,8 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  name: 'Kubemgr',
-  description: 'Kubemgr simplifies merging Kubernetes configuration files, enabling seamless cluster access and management.',
+  name: 'Kubemgr - The Kubernetes Configuration Merger',
+  description: 'Kubemgr Web simplifies merging Kubernetes configuration files with a user-friendly interface. No CLI required. Just paste, merge, and manage your clusters effortlessly.',
   applicationCategory: 'DeveloperApplication',
   operatingSystem: 'Cross-platform',
   url: 'https://kubemgr.com',
@@ -120,7 +120,7 @@ const jsonLd = {
     '@type': 'WebPage',
     '@id': 'https://kubemgr.com',
     name: 'Merge easily your kubernetes configurations - Kubemgr',
-    description: 'Kubemgr simplifies merging Kubernetes configuration files, enabling seamless cluster access and management.',
+    description: 'Kubemgr Web simplifies merging Kubernetes configuration files with a user-friendly interface. No CLI required. Just paste, merge, and manage your clusters effortlessly.',
   },
 }
 
