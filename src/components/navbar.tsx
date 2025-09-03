@@ -59,7 +59,7 @@ export default function Navbar() {
         <TooltipShortcutTrigger>
           <Button ref={githubButtonRef} variant={'secondary'} size={'default-icon'} className="text-base md:text-sm" onClick={handleGithub}>
             <GithubIcon size={24} />
-            <a ref={githubLinkRef} rel="noopener" href="https://github.com/dorian-grst/kubemgr" target="_blank" className="hidden lg:flex">
+            <a ref={githubLinkRef} rel="noopener" href="https://github.com/kurama/kubemgr" target="_blank" className="hidden lg:flex">
               <h2>Github</h2>
             </a>
           </Button>

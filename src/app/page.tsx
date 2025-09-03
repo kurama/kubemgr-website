@@ -109,7 +109,7 @@ const jsonLd = {
   creator: {
     '@type': 'Person',
     name: 'Dorian Grasset',
-    url: 'https://github.com/dorian-grst',
+    url: 'https://github.com/kurama',
   },
   about: {
     '@type': 'Thing',

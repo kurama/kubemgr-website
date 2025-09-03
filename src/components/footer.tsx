@@ -153,7 +153,7 @@ export default function Footer() {
                 </section>
 
                 <section className="pt-2">
-                  <a href="https://github.com/dorian-grst/kubemgr" target="_blank" className="inline-flex items-center text-sm text-orange-500 hover:text-orange-600 font-medium">
+                  <a href="https://github.com/kurama/kubemgr" target="_blank" className="inline-flex items-center text-sm text-orange-500 hover:text-orange-600 font-medium">
                     ⭐ Support the project on GitHub <ExternalLink className="ml-1 h-4 w-4" />
                   </a>
                 </section>
